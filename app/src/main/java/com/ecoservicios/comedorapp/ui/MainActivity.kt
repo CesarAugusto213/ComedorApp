@@ -1,3 +1,5 @@
+@file:Suppress("DEPRECATION")
+
 package com.ecoservicios.comedorapp.ui
 
 import android.os.Build
@@ -6,6 +8,7 @@ import android.os.Bundle
 import android.view.WindowInsets
 import android.view.WindowManager
 import com.ecoservicios.comedorapp.databinding.ActivityMainBinding
+import com.ecoservicios.comedorapp.ui.login.LoginActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

@@ -53,6 +53,9 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.45")
     kapt("com.google.dagger:hilt-compiler:2.45")
 
+    // Fragment
+    implementation("androidx.fragment:fragment-ktx:1.6.1")
+
     // Room
     implementation("androidx.room:room-ktx:2.4.1")
     implementation("androidx.room:room-runtime:2.4.1")
@@ -61,6 +64,15 @@ dependencies {
     // Retrofit
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     api("com.squareup.retrofit2:converter-moshi:2.9.0")
+
+    // Coroutines
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.0")
+
+    // ViewModel
+    implementation("androidx.lifecycle:lifecycle-viewmodel:2.3.1")
+
+    // LiveData
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.6.1")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
