@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">ComedorApp</string>
+    <string name="title_login">Iniciar Sesion</string>
+    <string name="desc_login">Registra guias y da seguimiento a tus procesos.</string>
+    <string name="title_hint_login">Ingrese su usuario</string>
+    <string name="desc_hint_password">Ingrese su password</string>
+    <string name="btn_login">Ingresar</string>
+    <string name="question_login">¿No tienes tu cuenta?</string>
+    <string name="communicate_login">Comunicate con el area de T.I.</string>
 </resources>
