@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.room.Room
 import com.ecoservicios.comedorapp.data.local.database.ComedorDatabase
 import com.ecoservicios.comedorapp.data.local.database.dao.CampusDao
+import com.ecoservicios.comedorapp.data.local.database.dao.UserDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -26,6 +27,12 @@ object DatabaseModule {
     @Singleton
     fun provideCampusDao(appDatabase: ComedorDatabase): CampusDao {
         return appDatabase.campusDao()
+    }
+
+    @Provides
+    @Singleton
+    fun provideUserDao(appDatabase: ComedorDatabase): UserDao {
+        return appDatabase.userDao()
     }
 
 }

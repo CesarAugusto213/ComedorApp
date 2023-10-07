@@ -80,7 +80,7 @@
                     app:layout_constraintVertical_bias="0.1" />
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/inputUserLogin"
+                    android:id="@+id/labelUserLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -90,30 +90,34 @@
                     app:layout_constraintVertical_bias="0.2">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputUserLogin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/raleway_medium"
-                        android:hint="Ingrese su usuario" />
+                        android:hint="Ingrese su usuario"
+                        android:textColor="@color/black" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/inputPasswordLogin"
+                    android:id="@+id/labelPasswordLogin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/inputUserLogin"
+                    app:layout_constraintTop_toBottomOf="@id/labelUserLogin"
                     app:layout_constraintVertical_bias="0.1"
                     app:passwordToggleEnabled="true">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/inputPasswordLogin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/raleway_medium"
                         android:hint="Ingrese su password"
-                        android:inputType="textPassword" />
+                        android:inputType="textPassword"
+                        android:textColor="@color/black" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -126,7 +130,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@id/inputPasswordLogin"
+                    app:layout_constraintTop_toBottomOf="@id/labelPasswordLogin"
                     app:layout_constraintVertical_bias="0.25" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>

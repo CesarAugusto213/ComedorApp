@@ -8,4 +8,9 @@ class CampusRepository @Inject constructor(private val campusDao: CampusDao) {
     suspend fun insertCampus(campus: CampusEntity) {
         campusDao.insertCampus(campus)
     }
+
+    suspend fun getCampus(): List<CampusEntity>{
+        return campusDao.getCampus()
+    }
+
 }
