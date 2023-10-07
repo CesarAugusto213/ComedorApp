@@ -11,7 +11,7 @@ import androidx.lifecycle.lifecycleScope
 import com.ecoservicios.comedorapp.data.local.database.entities.CampusEntity
 import com.ecoservicios.comedorapp.data.local.database.entities.UserEntity
 import com.ecoservicios.comedorapp.databinding.ActivityLoginBinding
-import com.ecoservicios.comedorapp.ui.MainActivity
+import com.ecoservicios.comedorapp.ui.main.MainActivity
 import com.ecoservicios.comedorapp.util.Extension
 import com.ecoservicios.comedorapp.util.launchAndCollect
 import dagger.hilt.android.AndroidEntryPoint

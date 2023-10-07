@@ -1,4 +1,4 @@
-package com.ecoservicios.comedorapp.ui
+package com.ecoservicios.comedorapp.ui.main
 
 import android.content.Context
 import android.content.Intent

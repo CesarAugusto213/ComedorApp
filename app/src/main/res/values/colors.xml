@@ -6,4 +6,6 @@
     <color name="secondary">#3F60B5</color>
     <color name="accent">#92D400</color>
     <color name="link">#0d6EFD</color>
+    <color name="gray">#f5f6fe</color>
+    <color name="gray_dark">#B0B0B1</color>
 </resources>
