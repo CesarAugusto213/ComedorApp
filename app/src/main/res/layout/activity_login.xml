@@ -99,6 +99,7 @@
                         android:id="@+id/labelPasswordLogin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        app:passwordToggleTint="@color/primary"
                         app:passwordToggleEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText

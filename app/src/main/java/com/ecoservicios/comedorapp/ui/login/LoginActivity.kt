@@ -76,6 +76,10 @@ class LoginActivity : AppCompatActivity() {
                 lifecycleScope.launch {
                     val responseCampus = viewModel.getCampus()
                     viewModel.searchUserToLogIn(user.toString(), password.toString())
+                    viewModel.getUsers()
+                    val x = viewModel.stateUser.value.listUser
+
+                    Log.d("Logins", x.toString())
                     //Borrar
                     Log.d("Login", responseCampus.toString())
                 }
