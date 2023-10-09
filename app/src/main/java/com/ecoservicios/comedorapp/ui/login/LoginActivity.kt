@@ -11,7 +11,7 @@ import androidx.lifecycle.lifecycleScope
 import com.ecoservicios.comedorapp.data.local.database.entities.CampusEntity
 import com.ecoservicios.comedorapp.data.local.database.entities.UserEntity
 import com.ecoservicios.comedorapp.databinding.ActivityLoginBinding
-import com.ecoservicios.comedorapp.ui.MainActivity
+import com.ecoservicios.comedorapp.ui.main.MainActivity
 import com.ecoservicios.comedorapp.util.Extension
 import com.ecoservicios.comedorapp.util.launchAndCollect
 import dagger.hilt.android.AndroidEntryPoint
@@ -76,6 +76,10 @@ class LoginActivity : AppCompatActivity() {
                 lifecycleScope.launch {
                     val responseCampus = viewModel.getCampus()
                     viewModel.searchUserToLogIn(user.toString(), password.toString())
+                    viewModel.getUsers()
+                    val x = viewModel.stateUser.value.listUser
+
+                    Log.d("Logins", x.toString())
                     //Borrar
                     Log.d("Login", responseCampus.toString())
                 }

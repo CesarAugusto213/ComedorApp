@@ -1,4 +1,4 @@
-package com.ecoservicios.comedorapp.data.repository
+package com.ecoservicios.comedorapp.data.local.database.repository
 
 import com.ecoservicios.comedorapp.data.local.database.dao.CampusDao
 import com.ecoservicios.comedorapp.data.local.database.entities.CampusEntity
